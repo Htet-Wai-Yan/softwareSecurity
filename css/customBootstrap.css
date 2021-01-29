@@ -9902,7 +9902,7 @@ body {
 }
 
 header {
-  background-image: url("/images/technology.jpg");
+  background-image: url("images/technology.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -10067,7 +10067,7 @@ header {
 }
 
 .reason {
-  background-image: url("/images/honeycomb.jpg");
+  background-image: url("images/honeycomb.jpg");
 }
 
 .reason .title {
