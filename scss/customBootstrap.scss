@@ -1,0 +1,285 @@
+$secondary: orange; 
+// #FC750E;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body{
+  overflow-x: hidden; //disable horizontal scroll
+  box-sizing: border-box;
+}
+
+// head session
+header{
+  background-image: url('/images/technology.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper{
+  // box-sizing: border-box;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#info, nav{
+  padding: 10px 30px;
+}
+.info-list span{
+  color: darkgray;
+  list-style: none;
+  padding: 0 5px;
+  font-size: 0.8em;
+}
+.info-list a{
+  padding-left: 5px;
+  color: orange;
+}
+.info-list a:hover{
+  color: white;
+  transition: 0.5s,
+}
+
+.info-list > span > i{
+  color: orange
+}
+
+.navbar-nav .nav-link:hover{
+  color: $secondary !important;
+}
+
+#slogon{
+  padding: 95px 30px;
+}
+#slogon .text{
+  width: 600px;
+}
+
+// About Session
+.software, .aboutSession{
+  padding: 30px;
+  margin: 20px 0 20px 0;
+  // box-sizing: border-box;
+}
+.aboutText h5, h3, p{
+  padding-bottom: 20px;
+}
+.aboutText a{
+  width: 130px;
+  height: auto;
+  font-size: 1.2em;
+  border-radius: 20px;
+}
+.software .security, 
+.software .privacy, 
+.software .certified{
+  background-color: #381f83;
+  padding: 1em;
+  margin: 5px;
+  color: white;
+  border-bottom: 5px solid $secondary;
+  border-radius: 8px;
+}
+.security:hover, .privacy:hover, .certified:hover{
+  background-color: #10003F;
+  transition: 1.5s;
+}
+.software .col-sm-4{
+  padding: 0 5px;
+}
+.software h5{
+  padding: 1.5em 0;
+  font-size: 1.2em;
+}
+.software i{
+  font-size: 30px;
+  color: $secondary;
+}
+.services{
+  background-color: #FC750E;
+}
+.title{
+  padding: 80px 0 40px 0;
+  text-align: center;
+}
+.title h5{
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.title h3{
+  font-weight: bolder;
+}
+.title hr{
+  width: 150px;
+  height: 2px;
+  background-color: #10003F;
+}
+.serviceOne{
+  padding: 0 0 60px 0;
+}
+.securityImg{
+  // padding: 0 10px;
+  margin: 20px 5px;
+  border-radius: 1em;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.7), 0 15px 30px 0 rgba(0, 0, 0, 0.7);
+}
+.securityImg .img-fluid{
+  border-radius: 1em;
+}
+.verticalTab > h4,
+.verticalTab > p{
+  padding: 5px;
+  margin: 0;
+}
+.verticalTab h4{
+  font-weight: bolder;
+}
+.verticalTab{
+  padding: 20px;
+  margin: 0 5px 10px 5px;
+  background-color: #381f83;
+  color: whitesmoke;
+  border-radius: 1em;
+  border-right: #fff solid 5px;
+}
+.verticalTab:hover{
+  background-color: #10003F;
+}
+.verticalTab .tabIcon{
+  font-size: 40px;
+  float: left;
+  margin: 0 20px 0 0;
+  height: 100px;
+  color: $secondary;
+}
+// Why Choose Us
+.reason{
+  background-image: url('/images/honeycomb.jpg');
+}
+.reason .title{
+  color: whitesmoke;
+}
+.reason .video{
+  width: 80%;
+  height: 70vh;
+}
+.reason .card{
+  margin: 20px 5px;
+  background-color: #FC750E;
+  color: #fff;
+  border-radius: 10px;
+}
+.reason .card:hover{
+  background-color: #381f83;
+  color: #FC750E;  
+}
+.reason .card-title{
+  text-align: center;
+}
+// price
+.price{
+  padding-bottom: 80px;
+}
+.price .col-sm-4{
+  border: none;
+  margin: 10px 0;
+  padding: 10px;
+}
+.price .card-header{
+  background-color: #FC750E;
+  color: white;
+  font-weight: 800;
+}
+.price .card-body{
+  background-color: rgba(128, 128, 128, 0.3);
+  line-height: 2;
+}
+.price .card-title{
+  font-size: 30px;
+  font-weight: 700;
+}
+.price .card-title span{
+  font-size: 16px;
+}
+
+.price-list li{
+  list-style: none;
+}
+.price-list li > i{
+  font-size: 0.5em;
+  color: #FC750E;
+}
+.card-footer{
+  background-color: rgba(128, 128, 128, 0.3);
+  text-align: center;
+  border: none;
+}
+.card-footer .btn{
+  border: #FC750E solid 2px;
+}
+.card-footer .btn:hover{
+  background-color: $secondary;
+  color: #381f83;
+}
+
+// contact form
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #ffcba3;
+  padding: 20px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #FC750E;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: $secondary;
+}
+
+.contact{
+  background-color: #381f83;
+  padding-bottom: 80px;
+}
+.contact .title{
+  color: #fff;
+}
+// add padding to contact info div
+.contact .info{
+  padding: 10px;
+}
+.info > p{
+  padding: 0;
+  margin: 0;
+}
+
+// footer
+.footer{
+  background-color: #FC750E;
+}
+.footer p{
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+
